@@ -49,4 +49,32 @@
             </modules>
         </translate>
     </adminhtml>
+
+    <default>
+        <carriers>
+            <pickup>
+                <active>1</active>
+                <sallowspecific>0</sallowspecific>
+                <model>integernet_pickup/carrier_pickup</model>
+                <name>Pickup at Store</name>
+                <price>0.00</price>
+                <title>Pickup at Store</title>
+                <type>I</type>
+                <specificerrmsg>This shipping method is currently unavailable. If you would like to ship using this shipping method, please contact us.</specificerrmsg>
+                <infotext></infotext>
+                <handling_type>F</handling_type>
+            </pickup>
+        </carriers>
+        <payment>
+            <pickup>
+                <active>1</active>
+                <model>integernet_pickup/payment_pickup</model>
+                <order_status>pending</order_status>
+                <title>Payment on Pickup</title>
+                <allowspecific>0</allowspecific>
+                <sort_order>10</sort_order>
+                <group>offline</group>
+            </pickup>
+        </payment>
+    </default>
 </config>
