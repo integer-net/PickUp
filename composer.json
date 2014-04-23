@@ -1,5 +1,5 @@
 {
-   "name": "integer_net/pickup",
+   "name": "integer-net/pickup",
    "type": "magento-module",
    "description": "Shipping method and payment method for store pickup",
    "homepage": "https://bitbucket.org/avstudnitz/integernet_pickup",
