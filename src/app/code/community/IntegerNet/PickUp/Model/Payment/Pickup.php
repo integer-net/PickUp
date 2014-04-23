@@ -40,7 +40,7 @@ class IntegerNet_PickUp_Model_Payment_Pickup extends Mage_Payment_Model_Method_A
      */
     public function isAvailable($quote = null)
     {
-        return parent::isAvailable($quote) && $quote->getShippingAddress()->getShippingMethod() == 'pickup_pickup';
+        return parent::isAvailable($quote) && (is_null($quote) || $quote->getShippingAddress()->getShippingMethod() == 'pickup_pickup');
     }
 
     /**
