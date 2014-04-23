@@ -1,0 +1,9 @@
+{
+   "name": "integer_net/pickup",
+   "type": "magento-module",
+   "description": "Shipping method and payment method for store pickup",
+   "homepage": "https://bitbucket.org/avstudnitz/integernet_pickup",
+   "require": {
+      "magento-hackathon/magento-composer-installer": "*"
+   }
+}

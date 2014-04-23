@@ -1,0 +1,52 @@
+<?xml version="1.0"?>
+<config>
+    <modules>
+        <IntegerNet_PickUp>
+            <version>0.1.0</version>
+        </IntegerNet_PickUp>
+    </modules>
+
+    <global>
+        <models>
+            <integernet_pickup>
+                <class>IntegerNet_PickUp_Model</class>
+            </integernet_pickup>
+        </models>
+
+        <blocks>
+            <integernet_pickup>
+                <class>IntegerNet_PickUp_Block</class>
+            </integernet_pickup>
+        </blocks>
+
+        <helpers>
+            <integernet_pickup>
+                <class>IntegerNet_PickUp_Helper</class>
+            </integernet_pickup>
+        </helpers>
+    </global>
+
+    <frontend>
+        <translate>
+            <modules>
+                <IntegerNet_PickUp>
+                    <files>
+                        <default>IntegerNet_PickUp.csv</default>
+                    </files>
+                </IntegerNet_PickUp>
+            </modules>
+        </translate>
+    </frontend>
+
+    <adminhtml>
+        <translate>
+            <modules>
+                <IntegerNet_PickUp>
+                    <files>
+                        <default>IntegerNet_PickUp.csv</default>
+                    </files>
+                </IntegerNet_PickUp>
+            </modules>
+        </translate>
+    </adminhtml>
+</config>
