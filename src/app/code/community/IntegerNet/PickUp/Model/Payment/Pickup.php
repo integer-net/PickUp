@@ -29,6 +29,9 @@ class IntegerNet_PickUp_Model_Payment_Pickup extends Mage_Payment_Model_Method_A
      */
     protected $_code = 'pickup';
 
+    protected $_formBlockType = 'integernet_pickup/payment_form';
+    protected $_infoBlockType = 'integernet_pickup/payment_info';
+
     /**
      * Check whether method is available
      *
@@ -38,5 +41,25 @@ class IntegerNet_PickUp_Model_Payment_Pickup extends Mage_Payment_Model_Method_A
     public function isAvailable($quote = null)
     {
         return parent::isAvailable($quote) && $quote->getShippingAddress()->getShippingMethod() == 'pickup_pickup';
+    }
+
+    /**
+     * Get custom form text from config
+     *
+     * @return string
+     */
+    public function getCustomFormText()
+    {
+        return trim($this->getConfigData('custom_form_text'));
+    }
+
+    /**
+     * Get custom form text from config
+     *
+     * @return string
+     */
+    public function getCustomInfoText()
+    {
+        return trim($this->getConfigData('custom_info_text'));
     }
 }

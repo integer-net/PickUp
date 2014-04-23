@@ -1,0 +1,22 @@
+<?php
+/**
+ * integer_net Magento Module
+ *
+ * @category   IntegerNet
+ * @package    IntegerNet_PickUp
+ * @copyright  Copyright (c) 2014 integer_net GmbH (http://www.integer-net.de/)
+ * @author     Andreas von Studnitz <avs@integer-net.de>
+ */
+?>
+<?php /** @var $this IntegerNet_PickUp_Block_Payment_Info */ ?>
+
+<p><?php echo $this->escapeHtml($this->getMethod()->getTitle()) ?></p>
+<?php if ($instructions = trim($this->getCustomText())): ?>
+    <table>
+        <tbody>
+        <tr>
+            <td><?php echo nl2br($instructions) ?></td>
+        </tr>
+        </tbody>
+    </table>
+<?php endif; ?>

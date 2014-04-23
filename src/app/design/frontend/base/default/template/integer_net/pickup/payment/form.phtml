@@ -1,0 +1,21 @@
+<?php
+/**
+ * integer_net Magento Module
+ *
+ * @category   IntegerNet
+ * @package    IntegerNet_PickUp
+ * @copyright  Copyright (c) 2014 integer_net GmbH (http://www.integer-net.de/)
+ * @author     Andreas von Studnitz <avs@integer-net.de>
+ */
+?>
+<?php /** @var $this IntegerNet_PickUp_Block_Payment_Form */ ?>
+
+<?php if ($customText = trim($this->getCustomText())): ?>
+    <ul class="form-list checkout-agreements" id="payment_form_<?php echo $this->getMethodCode() ?>" style="display:none;">
+        <li>
+            <div class="<?php echo $this->getMethodCode() ?>-instructions-content agreement-content">
+                <?php echo nl2br($customText) ?>
+            </div>
+        </li>
+    </ul>
+<?php endif; ?>
