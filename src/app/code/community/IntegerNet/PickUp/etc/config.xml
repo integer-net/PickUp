@@ -76,5 +76,10 @@
                 <group>offline</group>
             </pickup>
         </payment>
+        <autoshipping>
+            <settings>
+                <ignore_shipping_methods>pickup</ignore_shipping_methods>
+            </settings>
+        </autoshipping>
     </default>
 </config>
